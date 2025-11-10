@@ -6,9 +6,10 @@
   <title>Dokumentasi PKL</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="dokumentasi-page">
 
-    <nav class="navbar">
+  <!-- Navbar -->
+  <nav class="navbar">
     <h2 class="logo">Laporan PKL</h2>
     <ul>
       <li><a href="/">Home</a></li>
@@ -17,34 +18,98 @@
       <li><a href="/biodata">Biodata Siswa</a></li>
       <li><a href="/kompetensi">Kompetensi</a></li>
       <li><a href="/kesan">Kesan & Pesan</a></li>
-      <li><a href="/dokumentasi">Dokumentasi</a></li>
+      <li><a href="/dokumentasi" class="active">Dokumentasi</a></li>
     </ul>
   </nav>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="overlay"></div>
     <div class="content">
       <h1>Dokumentasi PKL</h1>
-      <p>Foto kenang-kenangan kegiatan selama praktik kerja lapang di BBPPMPV BOE Malang.</p>
+      <p>Foto kegiatan selama Praktik Kerja Lapangan di BBPPMPV BOE Malang.</p>
     </div>
   </section>
 
+  <!-- Gallery -->
   <section class="gallery">
     <div class="container">
-        <img src="{{ url_for('static', filename='2.jpeg') }}" alt="Dokumentasi 2">
+      <div class="gallery-item">
         <img src="{{ url_for('static', filename='1.jpeg') }}" alt="Dokumentasi 1">
+        <div class="caption">
+          <p>20 Juli 2025 — Senam Hari Anak</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="{{ url_for('static', filename='2.jpeg') }}" alt="Dokumentasi 2">
+        <div class="caption">
+          <p>17 Agustus 2025 — Upacara kemerdekaan.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
         <img src="{{ url_for('static', filename='3.jpeg') }}" alt="Dokumentasi 3">
+        <div class="caption">
+          <p>12 September 2025 — Setelah senam jumaat.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
         <img src="{{ url_for('static', filename='4.jpeg') }}" alt="Dokumentasi 4">
+        <div class="caption">
+          <p>17 Agustus 2025 — Upacara kemerdekaan.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
         <img src="{{ url_for('static', filename='5.jpeg') }}" alt="Dokumentasi 5">
+        <div class="caption">
+          <p>15 Agustus 2025 — Lomba 17 an..</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
         <img src="{{ url_for('static', filename='6.jpeg') }}" alt="Dokumentasi 6">
+        <div class="caption">
+          <p>12 September 2025 —  Grill di rumah mbak dea cantik sekali.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
         <img src="{{ url_for('static', filename='7.jpeg') }}" alt="Dokumentasi 7">
+        <div class="caption">
+          <p>17 Agustus 2025 — Upacara kemerdekaan.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
         <img src="{{ url_for('static', filename='8.jpeg') }}" alt="Dokumentasi 8">
-        <img src="{{ url_for('static', filename='9.jpeg') }}" alt="Dokumentasi 9">
-        <img src="{{ url_for('static', filename='10.jpeg') }}" alt="Dokumentasi 10">
-        <img src="{{ url_for('static', filename='11.jpeg') }}" alt="Dokumentasi 11">
-        <img src="{{ url_for('static', filename='12.jpeg') }}" alt="Dokumentasi 12">
+        <div class="caption">
+          <p>6 Agustus 2025 — Nongkrong bersama.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="{{ url_for('static', filename='Boe1.jpeg') }}" alt="Dokumentasi 9">
+        <div class="caption">
+          <p>28 Oktober 2025 — Upacara Sumpah Pemuda.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="{{ url_for('static', filename='senam.jpeg') }}" alt="Dokumentasi 9">
+        <div class="caption">
+          <p>31 Oktober 2025 — Saat senam.</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <div class="footer-bar">
+    <p>BBPPMPV BOE Malang | Jl. Teluk Mandar, Arjosari, Kec. Blimbing, Kota Malang, Jawa Timur 65102 | Data Informatika</p>
+  </div>
 
 </body>
 </html>
